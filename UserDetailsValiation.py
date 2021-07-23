@@ -68,4 +68,21 @@ class ValidateDetails:
         except Exception as err:
             logger.error(err)
 
-        
+
+    def validateNumber(mobileNumberInput):
+        """
+    Description:
+        This method is used for validating mobile number with regex pattern.
+    Return:
+        It returns Valid if its valid mobile.
+        It returns Invalid if its Invalid mobile.
+       
+    """
+        try:
+            if re.match(re.compile(re_pattern.mobileNumber_pattern),mobileNumberInput):
+                return "valid"
+            else:
+                return "Invalid"
+
+        except Exception as err:
+            logger.error(err)    

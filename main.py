@@ -26,9 +26,15 @@ def getUserInput():
         email = input("Enter the email :")
         logger.info("Entered email is {}".format(ValidateDetails.validateEmail(email)))
 
+        mobileNumber = input("Enter the mobile number :")
+        logger.info("Entered mobile number is {}".format(ValidateDetails.validateNumber(mobileNumber)))
+
 
     except Exception as err:
         logger.error(err)
+
+
+
 
 if __name__ == "__main__":
     getUserInput()        
