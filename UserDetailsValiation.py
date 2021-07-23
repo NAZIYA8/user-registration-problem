@@ -86,3 +86,21 @@ class ValidateDetails:
 
         except Exception as err:
             logger.error(err)    
+
+    def validatePassword(passwordInput):
+        """
+    Description:
+        This method is used for validating password with regex pattern.
+    Return:
+        It returns valid if its valid password.
+        It returns Invalid if its Invalid password.
+       
+    """
+        try:
+            if re.match(re.compile(re_pattern.password_pattern),passwordInput):
+                return "valid"
+            else:
+                return "Invalid"
+
+        except Exception as err:
+            logger.error(err)

@@ -29,6 +29,9 @@ def getUserInput():
         mobileNumber = input("Enter the mobile number :")
         logger.info("Entered mobile number is {}".format(ValidateDetails.validateNumber(mobileNumber)))
 
+        password = input("Enter the password :")
+        logger.info("Entered password is {}".format(ValidateDetails.validatePassword(password)))
+
 
     except Exception as err:
         logger.error(err)
