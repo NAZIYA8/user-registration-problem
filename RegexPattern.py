@@ -9,3 +9,4 @@
 class RegexPattern:
 
     firstName_pattern = "^[A-Z]{1}[a-z]{3,}"
+    lastName_pattern = "^[A-Z]{1}[a-z]{3,}"

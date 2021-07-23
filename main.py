@@ -20,6 +20,11 @@ def getUserInput():
         firstName = input("Enter the first Name :")
         logger.info("Entered First Name is {}".format(ValidateDetails.validateFirstName(firstName)))
 
+        lastName = input("Enter the last Name :")
+        logger.info("Entered last Name is {}".format(ValidateDetails.validateLastName(lastName)))
+
+
+
     except Exception as err:
         logger.error(err)
 

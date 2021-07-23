@@ -31,3 +31,22 @@ class ValidateDetails:
 
         except Exception as err:
             logger.error(err)
+
+    def validateLastName(lastNameInput):
+        """
+    Description:
+        This method is used for  validating last name with regex pattern.
+    Return:
+        It returns valid if its valid last name.
+        It returns invalid if its Invalid last name.
+       
+    """
+        try:
+            if re.match(re.compile(re_pattern.lastName_pattern),lastNameInput):
+                return "Valid"
+            else:
+                return "Invalid"
+
+        except Exception as err:
+            logger.error(err)
+        
