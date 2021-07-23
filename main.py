@@ -32,6 +32,12 @@ def getUserInput():
         password = input("Enter the password :")
         logger.info("Entered password is {}".format(ValidateDetails.validatePassword(password)))
 
+        emailSample = ['abc@yahoo.com', 'abc-100@yahoo.com', 'abc.100@yahoo.com', 'abc111@abc.com',
+                        'abc-100@abc.net', 'abc.100@abc.com.au', 'abc@1.com', 'abc@gmail.com.com', 'abc+100@gmail.com']
+        email = input("Enter the email :")
+        for item in emailSample:
+            logger.info("Entered email is {}".format(ValidateDetails.validateEmail(item)))
+            break
 
     except Exception as err:
         logger.error(err)
