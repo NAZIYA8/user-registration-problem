@@ -10,3 +10,4 @@ class RegexPattern:
 
     firstName_pattern = "^[A-Z]{1}[a-z]{3,}"
     lastName_pattern = "^[A-Z]{1}[a-z]{3,}"
+    email_pattern = "^[a-zA-Z0-9]+([+.-][a-zA-Z0-9]+)*[@][a-zA-Z0-9]+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2,4})?"

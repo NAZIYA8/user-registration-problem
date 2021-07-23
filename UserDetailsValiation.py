@@ -49,4 +49,23 @@ class ValidateDetails:
 
         except Exception as err:
             logger.error(err)
+
+    def validateEmail(emailInput):
+        """
+    Description:
+        This method is used for validating email with regex pattern.
+    Return:
+        It returns valid if its valid email.
+        It returns Invalid if its Invalid email.
+       
+    """
+        try:
+            if re.match(re.compile(re_pattern.email_pattern),emailInput):
+                return "valid"
+            else:
+                return "Invalid"
+
+        except Exception as err:
+            logger.error(err)
+
         

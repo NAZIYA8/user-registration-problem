@@ -23,6 +23,8 @@ def getUserInput():
         lastName = input("Enter the last Name :")
         logger.info("Entered last Name is {}".format(ValidateDetails.validateLastName(lastName)))
 
+        email = input("Enter the email :")
+        logger.info("Entered email is {}".format(ValidateDetails.validateEmail(email)))
 
 
     except Exception as err:
