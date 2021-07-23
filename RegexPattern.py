@@ -12,4 +12,4 @@ class RegexPattern:
     lastName_pattern = "^[A-Z]{1}[a-z]{3,}"
     email_pattern = "^[a-zA-Z0-9]+([+.-][a-zA-Z0-9]+)*[@][a-zA-Z0-9]+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2,4})?"
     mobileNumber_pattern = "^[0-9]{2}\\s{1}[0-9]{10}"
-    password_pattern = ".{8,}"
+    password_pattern = "^(?=.*[A-Z]).{8,}$"
